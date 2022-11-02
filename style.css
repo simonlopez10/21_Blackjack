@@ -1,0 +1,424 @@
+body {
+    background-image: url(/cards/descarga.jpg);
+    background-size: 100%;
+    margin: 0 1% 0 1%;
+    font-family: 'Amatic SC', cursive;
+}
+
+.title-container {
+    height: 8vh;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: #DC143C;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+h1:hover {
+    color: #DC143C;
+}
+
+.big-game-container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+/*------------------------------------INSTRUCTIONS AND LOGO--------------------------------------*/
+.instructions-and-logo-section {
+    height: 100%;
+    width: 20%;
+    /* background-color: antiquewhite; */
+}
+
+.instructions-container {
+    height: 70%;
+    width: 110%;
+    /* background-color: aqua; */
+}
+
+.instructions-title {
+    height: 15%;
+    width: 100%;
+    margin-top: 8%;
+    background-image: url(/cards/poker-table-background.jpg);
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(211, 211, 40);
+    border-radius: 20px;
+    border: 1px solid rgb(91, 126, 20);
+}
+
+.instructions {
+    height: 85%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions-frame {
+    height: 95%;
+    width: 100%;
+    background-image: url(/cards/poker-table-background.jpg);
+    border-radius: 30px;
+    border: 1px solid rgb(91, 126, 20);
+}
+
+.instructions-frame p {
+    padding: 4%;
+    color: rgb(211, 211, 40);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.start-button {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 6px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+    translate: 82% 80%;
+}
+
+.start-button:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+    color: rgb(48, 170, 24);
+}
+
+.start-button:active {
+    position: relative;
+    top: 1px;
+}
+
+.logo-container {
+    height: 30%;
+    width: 110%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+}
+
+/*------------------------------------------GAME SECTION------------------------------------------*/
+
+.game-section {
+    height: 100%;
+    width: 80%;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    height: 93%;
+    width: 90%;
+    /* background-color: lightgreen; */
+    background-image: url(/cards/poker-table-background.jpg);
+    background-size: 100%;
+    opacity: 80%;
+    display: flex;
+    border-radius: 30px;
+    border: 2px solid rgb(37, 95, 37);
+}
+
+.cards-and-results {
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+/*-----------------------------------DECK AND BUTTONS SIDEBAR-------------------------------------*/
+
+.deck-and-buttons-container {
+    /* background-color: lightcoral; */
+    height: 100%;
+    width: 20%;
+    border-radius: 30px;
+}
+
+.dealer-title {
+    height: 23%;
+    width: 100%;
+    /* background-color: blue; */
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    translate: 8% 15%;
+    opacity: 80%;
+}
+
+.dealer-title p:hover {
+    color: red;
+}
+
+.number-cards-deck {
+    height: 5%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.deck {
+    height: 39%;
+    width: 100%;
+    /* background-color: #DC143C; */
+    display: flex;
+    justify-content: center;
+}
+
+.deck img {
+    margin: 3%;
+}
+
+.buttons-container {
+    height: 10%;
+    width: 100%;
+    /* background-color: lightgreen; */
+    text-align: center;
+}
+
+.buttons-container button {
+    margin-top: 6%;
+    box-shadow: inset 0px 1px 0px 0px #caefab;
+    background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+    background-color: #77d42a;
+    border-radius: 6px;
+    border: 1px solid #268a16;
+    display: inline-block;
+    cursor: pointer;
+    color: #306108;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 8px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #aade7c;
+    color: rgb(70, 64, 64);
+}
+
+.buttons-container button:hover {
+    background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+    background-color: #5cb811;
+    color: rgb(241, 224, 224);
+}
+
+.buttons-container button:active {
+    position: relative;
+    top: 1px;
+}
+
+.player-title {
+    height: 23%;
+    width: 100%;
+    /* background-color: blue; */
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    translate: 8% -20%;
+    opacity: 80%;
+}
+
+.player-title p:hover {
+    color: greenyellow;
+}
+
+/*----------------------------------------------DEALER---------------------------------------------*/
+.dealer-cards-container {
+    /* background-color: aquamarine; */
+    height: 40%;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+}
+
+.dealer-cards {
+    width: 88%;
+    height: 100%;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: center;
+}
+
+.dealer-cards img {
+    margin-top: 3%;
+    margin-right: 0.5%;
+}
+
+.dealer-points {
+    width: 12%;
+    height: 100%;
+    /* background-color: coral; */
+    color: white;
+}
+
+.dealer-points-title {
+    height: 20%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dealer-points-title h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 15%;
+}
+
+.dealer-points-title h2:hover {
+    color: red;
+}
+
+.dealer-points-number {
+    height: 80%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dealer-points h3 {
+    font-size: 55px;
+    font-weight: bolder;
+    border-radius: 100%;
+    border: 2px solid white;
+    padding: 10%;
+}
+
+.dealer-points h3:hover {
+    color: red;
+    border: 2px solid red;
+}
+
+/*---------------------------------------------RESULTS---------------------------------------------*/
+
+.results-container {
+    /* background-color: lightgray; */
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.results-container h2 {
+    font-size: 35px;
+    padding-right: 10%;
+    color: rgb(2, 105, 2);
+}
+
+.results-container h2:hover {
+    font-size: 40px;
+    /* color: rgb(8, 151, 8); */
+    color: #DC143C;
+    font-weight: bolder;
+}
+
+/*-----------------------------------------------PLAYER--------------------------------------------*/
+.player-cards-container {
+    /* background-color: lightgreen; */
+    height: 40%;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+}
+
+.player-cards {
+    width: 88%;
+    height: 100%;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: center;
+}
+
+.player-cards img {
+    margin-bottom: 3%;
+    margin-right: 0.5%;
+}
+
+.player-points {
+    width: 12%;
+    height: 100%;
+    /* background-color: coral;  */
+    color: white;
+}
+
+.player-points-title {
+    height: 20%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-points-title:hover {
+    color: green;
+}
+
+.player-points-title h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 15%;
+}
+
+.player-points-number {
+    height: 80%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-points h3 {
+    font-size: 55px;
+    font-weight: bolder;
+    border-radius: 100%;
+    border: 2px solid white;
+    padding: 10%;
+}
+
+.player-points h3:hover {
+    color: green;
+    border: 2px solid green;
+}
