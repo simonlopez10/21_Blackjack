@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Permanent+Marker&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
                     <div class="instructions-frame">
                         <p>1- You should try to get a score of 21. The points are shown on the right side of the table.</p>
                         <p>2- When you start the game, the dealer gets 2 but one in his back. You get 2 cards too but faced up.</p>
-                        <p>3- You should see your result and decide if you ask for more cards (pressing the "HIT" button) or if you don't want to take the risk, you can keep these points (pressing the "hOLD" button).</p>
+                        <p>3- You should see your result and decide if you ask for more cards (pressing the "HIT" button) or if you don't want to take the risk, you can keep these points (pressing the "HOLD" button).</p>
                         <p>4- If you want to start the game again, you should press the "RESTART" button.</p>
                         <button class="start-button">START GAME</button>
                     </div>
@@ -45,8 +45,8 @@
 
         <section class="game-section">
             <div class="table">
-                <div class="deck-and-buttons-container">
-                    <div class="dealer-title">
+                <div id="deck-and-buttons-container">
+                    <div  id="dealer-title">
                         <p>DEALER 🤖</p>
 
                     </div>
@@ -60,18 +60,18 @@
                         <img src="/cards/DECK.png" alt="">
                     </div>
 
-                    <div class="buttons-container">
+                    <div class="buttons-container" id="buttons-container">
                         <button>HIT</button>
                         <button>HOLD</button>
                         <button>RESTART</button>
                     </div>
 
-                    <div class="player-title">
+                    <div id="player-title">
                         <p>PLAYER 🎮</p>
                     </div>
                 </div>
 
-                <div class="cards-and-results">
+                <div id="cards-and-results">
                     <div class="dealer-cards-container">
                         <div class="dealer-cards">
                             <img src="/cards/J-D.png" alt="">
@@ -110,5 +110,6 @@
             </div>
         </section>
     </div>
+    <script src="/js/main.js"></script>
 </body>
 </html>

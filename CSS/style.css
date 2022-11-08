@@ -147,7 +147,7 @@ h1:hover {
     border: 2px solid rgb(37, 95, 37);
 }
 
-.cards-and-results {
+#cards-and-results {
     /* background-color: lightblue; */
     height: 100%;
     width: 80%;
@@ -157,7 +157,7 @@ h1:hover {
 
 /*-----------------------------------DECK AND BUTTONS SIDEBAR-------------------------------------*/
 
-.deck-and-buttons-container {
+#deck-and-buttons-container {
     /* background-color: lightcoral; */
     height: 100%;
     width: 20%;
@@ -165,7 +165,7 @@ h1:hover {
     /* display: none; Oculta el deck de cartas y los botones de juego */
 }
 
-.dealer-title {
+#dealer-title {
     height: 23%;
     width: 100%;
     /* background-color: blue; */
@@ -249,7 +249,7 @@ h1:hover {
     top: 1px;
 }
 
-.player-title {
+#player-title {
     height: 23%;
     width: 100%;
     /* background-color: blue; */
