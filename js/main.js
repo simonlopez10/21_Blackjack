@@ -1,5 +1,16 @@
-// VARIABLES GLOBALES
+// VARIABLES GLOBALES (VG)
 var deck;
+
+// VG - DEALER
+var dealerPoints =0;
+var dealerAce = 0;
+var hiddenCard;
+
+// VG - PLAYER
+var playerPoints;
+var playerAce;
+var hitCard;
+
 
 function initialState() {
     //Ocultar elementos de la mesa principal, solo mostrar las instrucciones y el botón de iniciar juego
@@ -32,7 +43,45 @@ function shuffleDeck(arr) {
     return arr;
 }
 
+
+
+function startGame() {
+
+    hiddenCard = deck.pop();
+    dealerPoints += getCardValue(hiddenCard);
+    dealerAce += checkAce(hiddenCard);
+    console.log(hiddenCard);
+    console.log(dealerPoints);
+
+
+}
+
+function getCardValue(card) {
+
+    // Recibe el nombre de la carta retirada del deck de 52 cartas y devuelve su valor a partir del 
+    // nombre dado: "LETRA/NUMERO-PINTA"
+    let nameCard = card.split("-");
+    let cardValue = nameCard[0];
+
+    if(isNaN(cardValue)) {
+        if (cardValue == "A") {
+            return 11;
+        } else {
+            return 10;
+        }
+    }
+    return parseInt(cardValue)
+}
+
+function checkAce(card) {
+    if (card[0] == "A") {
+        return 1;
+    } 
+    return 0;
+}
+
 window.onload = function () {
     initialState();
     createDeck();
+    startGame();
 }
