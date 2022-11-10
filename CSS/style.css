@@ -18,9 +18,10 @@ span {
 }
 
 h1 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 45px;
-    font-weight: bold;
+    font-family: 'Amatic SC';
+    font-size: 50px;
+    font-weight: bolder;
+    padding-top: 1%;
 }
 
 h1:hover {
@@ -48,10 +49,10 @@ h1:hover {
 
 .instructions-title {
     height: 15%;
-    width: 100%;
-    margin-top: 8%;
+    width: 103%;
+    margin-top: 6.3%;
     background-image: url(/cards/poker-table-background.jpg);
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -74,15 +75,16 @@ h1:hover {
     height: 95%;
     width: 100%;
     background-image: url(/cards/poker-table-background.jpg);
-    border-radius: 30px;
+    border-radius: 20px;
     border: 1px solid rgb(91, 126, 20);
 }
 
 .instructions-frame p {
-    padding: 2.5% 3.7% 3% 4%;
+    padding: 3.5% 3.7% 3% 4%;
     color: rgb(211, 211, 40);
-    font-size: 15.9px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
     text-align: justify;
 }
 
@@ -170,7 +172,7 @@ h1:hover {
     width: 100%;
     /* background-color: blue; */
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,8 +181,9 @@ h1:hover {
     opacity: 80%;
 }
 
-.dealer-title p:hover {
+#dealer-title p:hover {
     color: red;
+    font-weight: bolder;
 }
 
 .number-cards-deck {
@@ -263,7 +266,7 @@ h1:hover {
     opacity: 80%;
 }
 
-.player-title p:hover {
+#player-title p:hover {
     color: greenyellow;
 }
 
@@ -357,16 +360,24 @@ h1:hover {
 }
 
 .results-container h2 {
-    font-size: 35px;
+    font-size: 45px;
     padding-right: 10%;
     color: rgb(2, 105, 2);
 }
 
 .results-container h2:hover {
-    font-size: 40px;
+    font-size: 50px;
     /* color: rgb(8, 151, 8); */
-    color: #DC143C;
+    color: #9e0020;
     font-weight: bolder;
+}
+
+.results-container span {
+    opacity: 1%;
+}
+
+.results-container span:hover {
+    opacity: 100%;
 }
 
 /*-----------------------------------------------PLAYER--------------------------------------------*/
@@ -413,7 +424,7 @@ h1:hover {
 }
 
 .player-points-title:hover {
-    color: green;
+    color: greenyellow;
 }
 
 .player-points-title h2 {
@@ -442,6 +453,6 @@ h1:hover {
 }
 
 .player-points h3:hover {
-    color: green;
-    border: 2px solid green;
+    color: greenyellow;
+    border: 2px solid greenyellow;
 }
