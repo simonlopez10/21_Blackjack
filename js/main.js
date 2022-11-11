@@ -169,8 +169,6 @@ function holdPoints() {
     let result= document.getElementById('result-message')
     result.innerText = resultMessage
     result.style.color = 'rgb(53, 207, 5)'
-
-
 }
 
 
