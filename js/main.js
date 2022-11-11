@@ -164,7 +164,12 @@ function holdPoints() {
         resultMessage = "YOU LOSE!"
     }
 
-    document.getElementById('result-message').innerText = resultMessage
+    document.getElementById('initial-result').style.display = 'none'
+    
+    let result= document.getElementById('result-message')
+    result.innerText = resultMessage
+    result.style.color = 'rgb(53, 207, 5)'
+
 
 }
 
