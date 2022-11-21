@@ -6,9 +6,10 @@ var dealerPoints =0;
 var dealerAce = 0;
 var hiddenCard;
 
+
 // VG - PLAYER
-var playerPoints;
-var playerAce;
+var playerPoints = 0;
+var playerAce = 0;
 var canHitCard = true;
 
 
@@ -63,11 +64,10 @@ function getCardValue(card) {
     if(isNaN(cardValue)) {
         if (cardValue == "A") {
             return 11;
-        } else {
-            return 10;
         }
+        return 10;
     }
-    return parseInt(cardValue)
+    return parseInt(cardValue);
 }
 
 
@@ -84,11 +84,17 @@ function startGame() {
 
     // funcion de juego principal
 
+    // boton de reinicio 
+
+    document.getElementById('restart-button').addEventListener('click', restart)
+
     // Muestra los elementos ocutlos de la condición inicial
     document.getElementById('deck-and-buttons-container').style.display = 'block';
     document.getElementById('cards-and-results').style.display = 'block';
     document.getElementById('start-button').style.display = 'none';
     document.getElementById('top-instruction').style.paddingTop = '9.5%'
+    document.getElementById('dealer-points-inner').style.display = 'none';
+    document.getElementById('player-points-inner').style.display = 'none';
 
     // Saca una carte del mazo para darle valor a la carta volteada del dealer
     hiddenCard = deck.pop();
@@ -117,6 +123,8 @@ function startGame() {
         document.getElementById("player-cards").append(cardImg);
     }
 
+    console.log(playerPoints)
+
     document.getElementById('hit-button').addEventListener('click', hitForCard)
     document.getElementById('hold-button').addEventListener('click', holdPoints)
 }
@@ -144,31 +152,43 @@ function hitForCard() {
 
 
 function holdPoints() {
+
+    document.getElementById('initial-result').style.display = 'none';
+    document.getElementById('dealer-points-inner').style.display = 'block';
+    document.getElementById('player-points-inner').style.display = 'block';
+
     dealerPoints = transformAce(dealerPoints, dealerAce);
     playerPoints = transformAce(playerPoints, playerAce);
 
     canHitCard = false;
     document.getElementById('hidden-card').src = "/cards/" + hiddenCard + ".png";
 
+    let result= document.getElementById('result-message')
+
     // Validar si jugador o dealaer se pasan de 21 puntos
     let resultMessage = "";
     if (playerPoints > 21) {
         resultMessage = "YOU LOSE!";
+        result.style.color = '#DC143C'
     } else if (dealerPoints > 21) {
         resultMessage = "YOU WIN!";
+        result.style.color = 'rgb(53, 207, 5)'
     } else if (playerPoints == dealerPoints) {  // Comparar el resultado de las sumas de puntas si ninguno se ha pasado
         resultMessage = 'TIE!'
+        result.style.color = 'yellow'
     }  else if (playerPoints > dealerPoints) {
         resultMessage = "YOU WIN!";
+        result.style.color = 'rgb(53, 207, 5)'
     } else if (playerPoints < dealerPoints) {
         resultMessage = "YOU LOSE!"
+        result.style.color = '#DC143C'
     }
 
-    document.getElementById('initial-result').style.display = 'none'
-    
-    let result= document.getElementById('result-message')
+ 
+    document.getElementById('dealer-points-inner').innerText = dealerPoints;
+    document.getElementById('player-points-inner').innerText = playerPoints;
     result.innerText = resultMessage
-    result.style.color = 'rgb(53, 207, 5)'
+  
 }
 
 
@@ -182,6 +202,10 @@ function transformAce(playerPoints, playerAce) {
     return playerPoints;
 }
 
+
+function restart() {
+    window.location.reload(true)
+}
 
 window.onload = function () {
     // Al cargar la pagina, ejecuta las siguientes funciones

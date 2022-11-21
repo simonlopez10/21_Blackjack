@@ -80,7 +80,7 @@ h1:hover {
 }
 
 .instructions-frame p {
-    padding: 3.5% 3.7% 3% 4%;
+    padding: 3% 3.7% 3% 4%;
     color: rgb(211, 211, 40);
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -103,7 +103,7 @@ h1:hover {
     padding: 4px 10px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #ffee66;
-    translate: 169px 5px;
+    translate: 169px 0px;
 }
 
 .start-button:hover {
@@ -357,11 +357,12 @@ h1:hover {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    font-weight: bolder;
 }
 
 .results-container h2 {
     font-size: 45px;
-    padding-right: 10%;
+    padding-right: 6%;
     color: rgb(2, 105, 2);
 }
 
