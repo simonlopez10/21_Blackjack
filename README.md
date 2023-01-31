@@ -26,4 +26,4 @@ this project was created during the course fullstack web development by [ENYOI](
 
 ## WEB
 
-[simon-21-blackjacj](https://simon-21-blackjack.netlify.app/)
+[simon-21-blackjack](https://simon-21-blackjack.netlify.app/)
