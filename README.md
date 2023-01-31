@@ -22,3 +22,8 @@ this project was created during the course fullstack web development by [ENYOI](
 ## CREDITS
 
 [Kenny Yip Coding](https://www.youtube.com/watch?v=bMYCWccL-3U&t=1328s)
+
+
+## WEB
+
+[simon-21-blackjacj](https://simon-21-blackjack.netlify.app/)
